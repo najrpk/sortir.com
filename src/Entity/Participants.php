@@ -50,10 +50,6 @@ class Participants implements UserInterface, PasswordAuthenticatedUserInterface
      */
     private $pseudo;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $mot_de_passe;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -195,17 +191,6 @@ class Participants implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    public function getMotDePasse(): ?string
-    {
-        return $this->mot_de_passe;
-    }
-
-    public function setMotDePasse(string $mot_de_passe): self
-    {
-        $this->mot_de_passe = $mot_de_passe;
-
-        return $this;
-    }
 
     public function getCampus(): ?string
     {
