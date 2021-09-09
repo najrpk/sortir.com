@@ -2,9 +2,12 @@
 
 {% block content %}
 <h1> Mon Profil</h1>
-
-    <a href="">mon image</a>
-
-    {{ form(form) }}
-
+    <div class = "row">
+        <div class='col-md-4'>
+        <a href="">mon image</a>
+        </div>
+        <div class='col-md-8'>
+        {{ form(form) }}
+        </div>
+    </div>
 {% endblock %}

@@ -77,6 +77,7 @@ class RegisterType extends AbstractType
                     'placeholder' => 'Télécharger votre photo'
                 ]
             ])
+
             ->add('submit', SubmitType::class,[
                 'label' => 'Enregistrer'
             ])
