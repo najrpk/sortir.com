@@ -4,20 +4,27 @@
 
 {% block content %}
     <h1> Mon compte</h1>
-<!-- ajouter le app.user.firstname -->
-    Bienvenue {{ app.user.prenom}} dans votre compte
-    <hr>
-    - prenom
-    <hr>
-    - nom
-    <hr>
-    -téléphone
-    <hr>
-    -email
-    <hr>
-    -campus
 
+<div class='text-center'>
+    <h1>{{ app.user.pseudo}} </h1>
+</div>
+    <hr>
+<div class='text-center'>
+    - {{ app.user.prenom}}
+    <hr>
+    - {{ app.user.nom}}
+    <hr>
+    -{{ app.user.telephone}}
+    <hr>
+    -{{ app.user.email}}
+    <hr>
+    -{{ app.user.campus}}
+</div>
 
+<div class='text-center' rel="stylesheet"  >
+
+    <p><a  class="btn btn-lg btn-primary"  href="" role="button">Retour </a></p>
+</div>
 
 
 
